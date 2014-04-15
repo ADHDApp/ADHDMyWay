@@ -1,0 +1,453 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ProfileSetupActivity" >
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/banner_background" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Profile Setup"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/system_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="UserName:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/editUserName"
+        android:layout_marginTop="15dp"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/editPassword"
+        android:layout_marginTop="15dp"
+        android:text="Birthday:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="Not Set" />
+
+    <Button
+        android:id="@+id/btnEditBirthday"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/txtBirthday"
+        android:layout_alignBaseline="@+id/txtBirthday"
+        android:layout_alignBottom="@+id/txtBirthday"
+        android:text="Edit" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="15dp"
+        android:text="State:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_below="@+id/txtBirthday"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <RadioGroup
+    android:id="@+id/rdoGroupStates"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Alabama" />
+
+    <RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arkansas" />
+    
+    <RadioButton
+        android:id="@+id/radio4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="California" />
+    
+    <RadioButton
+        android:id="@+id/radio5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colorado" />
+    
+    <RadioButton
+        android:id="@+id/radio6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connecticut" />
+    
+    <RadioButton
+        android:id="@+id/radio7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deleware" />
+    
+    <RadioButton
+        android:id="@+id/radio8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Florida" />
+    
+    <RadioButton
+        android:id="@+id/radio9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Georgia" />
+    
+    <RadioButton
+        android:id="@+id/radio10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hawaii" />
+    
+    <RadioButton
+        android:id="@+id/radio11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idaho" />
+    
+    <RadioButton
+        android:id="@+id/radio12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Illinois" />
+    
+    <RadioButton
+        android:id="@+id/radio13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indiana" />
+    
+    <RadioButton
+        android:id="@+id/radio14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iowa" />
+    
+    <RadioButton
+        android:id="@+id/radio15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kansas" />
+    
+    <RadioButton
+        android:id="@+id/radio16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kentucky" />
+    
+    <RadioButton
+        android:id="@+id/radio17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Louisiana" />
+    
+    <RadioButton
+        android:id="@+id/radio18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maine" />
+    
+    <RadioButton
+        android:id="@+id/radio19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maryland" />
+    
+    <RadioButton
+        android:id="@+id/radio20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Massachusetts" />
+    
+    <RadioButton
+        android:id="@+id/radio21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Michigan" />
+    
+    <RadioButton
+        android:id="@+id/radio22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minnesota" />
+    
+    <RadioButton
+        android:id="@+id/radio23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mississippi" />
+    
+    
+    <RadioButton
+        android:id="@+id/radio24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Missouri" />
+    
+    <RadioButton
+        android:id="@+id/radio25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Montana" />
+    
+    <RadioButton
+        android:id="@+id/radio26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nebraska" />
+    
+    <RadioButton
+        android:id="@+id/radio27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nevada" />
+    
+    <RadioButton
+        android:id="@+id/radio28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Hampshire" />
+    
+    <RadioButton
+        android:id="@+id/radio29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Jersey" />
+    
+    <RadioButton
+        android:id="@+id/radio30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Mexico" />
+    
+    <RadioButton
+        android:id="@+id/radio31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New York" />
+    
+    <RadioButton
+        android:id="@+id/radio32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="North Carolina" />
+    
+    <RadioButton
+        android:id="@+id/radio33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="North Dakota" />
+    
+    <RadioButton
+        android:id="@+id/radio34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ohio" />
+    
+    <RadioButton
+        android:id="@+id/radio35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oklahoma" />
+    <RadioButton
+        android:id="@+id/radio36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oregon" />
+    
+    <RadioButton
+        android:id="@+id/radio37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pennsylvania" />
+    
+    <RadioButton
+        android:id="@+id/radio38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rhode Island" />
+    
+    <RadioButton
+        android:id="@+id/radio39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="South Carolina" />
+    
+    <RadioButton
+        android:id="@+id/radio40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="South Dakota" />
+    
+    <RadioButton
+        android:id="@+id/radio41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arizona" />
+    
+    <RadioButton
+        android:id="@+id/radio42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tennessee" />
+    
+    <RadioButton
+        android:id="@+id/radio43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texas" />
+    
+    <RadioButton
+        android:id="@+id/radio44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utah" />
+    
+    <RadioButton
+        android:id="@+id/radio45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vermont" />
+    
+    <RadioButton
+        android:id="@+id/radio46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Virginia" />
+    
+    <RadioButton
+        android:id="@+id/radio47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Washington" />
+    
+    <RadioButton
+        android:id="@+id/radio48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="West Virginia" />
+    
+    <RadioButton
+        android:id="@+id/radio49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wisconsin" />
+    
+    <RadioButton
+        android:id="@+id/radio50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wyoming" />
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alaska" />
+
+</RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/scrollView1"
+        android:layout_marginTop="18dp"
+        android:text="Closest Major City:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Continue" />
+
+</RelativeLayout>
