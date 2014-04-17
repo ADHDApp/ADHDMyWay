@@ -5,5 +5,12 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_profile_setup">ProfileSetupActivity</string>
-
+	<string name="title_optional_profile">OPTIONAL PROFILE INFO</string>
+    <string name="eating_habits">Eating Habits/Diet</string>
+	<string name="personal_hygiene">Personal Hygiene</string>
+	<string name="stress_levels">Stress Levels</string>
+	<string name="physical_fitness">Physical Fitness</string>
+	<string name="comorbid_conditions">Co-morbid Conditions</string>
+	<string name="finish_setup">FINISH SETUP</string>
+    
 </resources>
