@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/system_blue"
+        android:id="@+id/titlebar">
+        
+	    <TextView
+	        android:id="@+id/textOptionalProfile"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:textStyle="bold"
+	        android:textColor="@color/system_white"
+	        android:text="@string/title_optional_profile"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <ScrollView 
+        android:layout_below="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+	    
+        <RelativeLayout
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content" >
+		    
+		    <Button
+		        android:id="@+id/buttonEatingHabits"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginTop="20dp"
+		        android:text="@string/eating_habits" />
+    		
+    		<Button
+		        android:id="@+id/buttonPersonalHygiene"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_below="@+id/buttonEatingHabits"
+		        android:text="@string/personal_hygiene" />
+    
+    		<Button
+		        android:id="@+id/buttonStressLevels"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_below="@+id/buttonPersonalHygiene"
+		        android:text="@string/stress_levels" />
+    
+    		<Button
+		        android:id="@+id/buttonPhysicalFitness"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_below="@+id/buttonStressLevels"
+		        android:text="@string/physical_fitness" />
+    
+    		<Button
+		        android:id="@+id/buttonComorbidConditions"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_below="@+id/buttonPhysicalFitness"
+		        android:text="@string/comorbid_conditions" />
+    
+	    </RelativeLayout>
+	    
+    </ScrollView>
+        
+    <Button
+        android:id="@+id/buttonFinishSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/finish_setup" />
+  
+    
+</RelativeLayout>
